@@ -26,8 +26,8 @@ jobs:
     - name: Display sfotunu username
       run: echo "A_Stoychev"
   
-  run_ui_tests:
-    needs: build_test
+  ui_tests:
+    needs: build_unit_tests
     runs-on: ubuntu-latest
 
     steps:
